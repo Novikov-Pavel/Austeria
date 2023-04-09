@@ -1,0 +1,45 @@
+@import "../../fonts";
+@import "../../vars";
+@import "../../extends";
+
+.header {
+    @extend flex;
+    margin: 0 100px;
+    &_menu {
+        @extend flex;
+        &_items {
+            @include font-face(700, 16px, "Poppins", $Gray_1);
+            @extend url;
+            padding: 19px 33px;
+            &:hover {
+                transform: skewX(-15deg);
+                background-color: $Primary;
+                span {
+                    color: $White;
+                    display: block;
+                    transform: skewX(15deg);
+                }
+            }
+        }
+        &::after {
+            content: "";
+            position: relative;
+            border-right: 1px solid rgba(0, 0, 0, 0.1);
+            transform: skewX(-15deg);
+            height: 54px;
+        }
+    }
+    &_contacts {
+        @extend flex;
+        gap: 44px;
+        &_mail,
+        &_phone {
+            @extend flex;
+            gap: 12px;
+            &_url {
+                @extend url;
+                @include font-face(700, 24px, "Bebas Neue", $Primary);
+            }
+        }
+    }
+}

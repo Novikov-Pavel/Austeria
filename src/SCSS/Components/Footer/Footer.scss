@@ -1,0 +1,65 @@
+@import "../../fonts";
+@import "../../vars";
+@import "../../extends";
+
+.footer {
+    @extend flex;
+    background-color: $Gray_1;
+    padding: 80px 103px;
+    gap: 180px;
+    &_logo {
+        @extend flex;
+        flex-direction: column;
+        align-items: flex-start;
+        p {
+            padding: 20px 0 30px;
+            margin: 0;
+            @include font-face(500, 16px, "Poppins", $White);
+        }
+        &_policy {
+            @include font-face(500, 14px, "Poppins", $F3);
+        }
+    }
+    &_social {
+        @extend flex;
+        flex-direction: column;
+        gap: 40px;
+        &_mail {
+            @extend flex;
+            gap: 20px;
+            &_url {
+                @include font-face(600, 18px, "Poppins", $White);
+                @extend url;
+            }
+        }
+        &_icons {
+            @extend flex;
+            gap: 20px;
+        }
+    }
+    &_phone {
+        @extend flex;
+        flex-direction: column;
+        gap: 40px;
+        &_call {
+            @extend flex;
+            gap: 20px;
+            &_number {
+                @include font-face(600, 18px, "Poppins", $White);
+                @extend url;
+            }
+        }
+        button {
+            @include font-face(700, 18px, "Poppins", $Gray_1);
+            padding: 12px 52px;
+            background-color: $Secondary;
+            border: none;
+            transform: skewX(-15deg);
+            cursor: pointer;
+            span {
+                transform: skewX(15deg);
+                display: block;
+            }
+        }
+    }
+}
