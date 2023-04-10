@@ -23,12 +23,15 @@
     }
     &_span {
         @include font-face(500, 16px, "Poppins", $Tetriary);
+        padding: 0px 100px 0px;
     }
     &_desc {
         @include font-face(600, 18px, "Poppins", $Tetriary);
         text-transform: uppercase;
-        padding: 40px 100px 80px;
-        span {
+        padding: 40px 100px 0px;
+        &_readMore {
+            padding: 0 100px;
+            @include font-face(600, 18px, "Poppins", $Tetriary);
             color: $Primary;
         }
     }

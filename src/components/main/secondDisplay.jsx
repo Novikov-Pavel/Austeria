@@ -8,9 +8,19 @@ let secondDisplay = () => {
         const [isReadMore, setIsReadMore] = useState(true);
         const toggleReadMore = () => setIsReadMore(!isReadMore);
         return (
-            <p className="secondDisplay_desc">
-                {isReadMore ? text.slice(0, 426) : text}
-                <span onClick={toggleReadMore}>
+            <p>
+                {isReadMore ? (
+                    <p className="secondDisplay_desc">{text.slice(0, 426)}</p>
+                ) : (
+                    <>
+                        <p className="secondDisplay_desc">{text.slice(0, 426)}</p>
+                        <p className="secondDisplay_span">{text.slice(427, 852)}</p>
+                        <p className="secondDisplay_span">{text.slice(853, 2031)}</p>
+                        <p className="secondDisplay_span">{text.slice(2032, 2570)}</p>
+                        <p className="secondDisplay_span">{text.slice(2571)}</p>
+                    </>
+                )}
+                <span className="secondDisplay_desc_readMore" onClick={toggleReadMore}>
                     {isReadMore ? " ЧИТАТЬ ДАЛЕЕ" : " СВЕРНУТЬ"}
                 </span>
             </p>
@@ -36,7 +46,7 @@ let secondDisplay = () => {
                     </span>
                 </div>
             </div>
-            <ReadMore className="secondDisplay_desc">
+            <ReadMore>
                 «Продукты, которые мы разрабатываем, отвечают современному
                 вызову агрессивной окружающей среды и порождены нашим огромным
                 желанием сделать качество жизни людей лучше. Неважно, на работе
