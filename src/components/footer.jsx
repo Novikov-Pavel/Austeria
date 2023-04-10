@@ -15,14 +15,11 @@ let footer = () => {
                 <NavLink to={MAIN}>
                     <img src={logo} alt="logo" />
                 </NavLink>
-                <p>
-                    © Маски-респираторы от пыли пыльцы,
+                <p>© Маски-респираторы от пыли пыльцы,
                     <br />
                     AllergyMask. Россия, Москва. 2016–{new Date().getFullYear()}
                 </p>
-                <NavLink to={MAIN} className="footer_logo_policy">
-                    Политика конфиденциальности
-                </NavLink>
+                <NavLink to={MAIN} className="footer_logo_policy">Политика конфиденциальности</NavLink>
             </div>
             {/*********************************************** Socials **************************************/}
             <div className="footer_social">

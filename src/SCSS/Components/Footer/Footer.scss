@@ -1,16 +1,16 @@
 @import "../../fonts";
 @import "../../vars";
 @import "../../extends";
+@import '../../mixins';
 
 .footer {
     @extend flex;
     background-color: $Gray_1;
     padding: 80px 103px;
-    gap: 180px;
+    gap: 20px;
     &_logo {
-        @extend flex;
+        display: flex;
         flex-direction: column;
-        align-items: flex-start;
         p {
             padding: 20px 0 30px;
             margin: 0;
@@ -51,15 +51,7 @@
         }
         button {
             @include font-face(700, 18px, "Poppins", $Gray_1);
-            padding: 12px 52px;
-            background-color: $Secondary;
-            border: none;
-            transform: skewX(-15deg);
-            cursor: pointer;
-            span {
-                transform: skewX(15deg);
-                display: block;
-            }
+            @include button(12px, 50px, -15deg, 15deg);
         }
     }
 }
