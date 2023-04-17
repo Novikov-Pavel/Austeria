@@ -1,6 +1,7 @@
-import { ABOUT, MAIN } from "./consts";
+import { ABOUT, MAIN, ARTICLEPAGE } from "./consts";
 import Main from "./pages/main";
 import About from "./pages/about";
+import ArticlePage from "./pages/articlePage";
 
 export const pages = [
     {
@@ -11,5 +12,9 @@ export const pages = [
     {
         path: ABOUT,
         element: <About />,
+    },
+    {
+        path: ARTICLEPAGE,
+        element: <ArticlePage />,
     },
 ];

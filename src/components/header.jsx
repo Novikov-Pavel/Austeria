@@ -3,8 +3,8 @@ import logo from "../assets/img/Components/Header/logo.svg";
 import mail from "../assets/img/Components/Header/mail.svg";
 import phone from "../assets/img/Components/Header/phone.svg";
 import "../SCSS/Components/Header/Header.scss";
-import { ABOUT, MAIN } from "../consts";
-import { NavLink } from "react-router-dom";
+import { ABOUT, MAIN, ARTICLEPAGE } from "../consts";
+import { Link, NavLink } from "react-router-dom";
 
 let header = () => {
     return (
@@ -18,7 +18,7 @@ let header = () => {
                 <NavLink to={ABOUT} className="header_menu_items">
                     <span>Каталог</span>
                 </NavLink>
-                <NavLink to={ABOUT} className="header_menu_items">
+                <NavLink to={ARTICLEPAGE} className="header_menu_items">
                     <span>Статьи</span>
                 </NavLink>
                 <NavLink to={ABOUT} className="header_menu_items">
@@ -41,12 +41,12 @@ let header = () => {
                 </div>
                 <div className="header_contacts_phone">
                     <img src={phone} alt="phone" />
-                    <a
+                    <Link
                         className="header_contacts_phone_url"
-                        href={`tel: ${process.env.REACT_APP_PHONE}`}
+                        to={`tel: +${process.env.REACT_APP_PHONE.replace(/\D+/gi,'')}`}
                     >
                         {process.env.REACT_APP_PHONE}
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>

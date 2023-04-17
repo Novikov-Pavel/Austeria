@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Children } from "react";
 import { NavLink } from "react-router-dom";
 import { MAIN } from "../consts";
 import logo from "../assets/img/Components/Footer/logo_footer.svg";
@@ -7,7 +7,9 @@ import mail from "../../src/assets/img/Components/Footer/mail_footer.svg";
 import phone from "../../src/assets/img/Components/Footer/phone_footer.svg";
 import { ReactSocialMediaIcons } from "react-social-media-icons";
 
-let footer = () => {
+
+let Footer = ({active, setActive}) => {
+    
     return (
         <div className="footer">
             {/*********************************************** Logo & policy **************************************/}
@@ -15,11 +17,14 @@ let footer = () => {
                 <NavLink to={MAIN}>
                     <img src={logo} alt="logo" />
                 </NavLink>
-                <p>© Маски-респираторы от пыли пыльцы,
+                <p>
+                    © Маски-респираторы от пыли пыльцы,
                     <br />
                     AllergyMask. Россия, Москва. 2016–{new Date().getFullYear()}
                 </p>
-                <NavLink to={MAIN} className="footer_logo_policy">Политика конфиденциальности</NavLink>
+                <NavLink to={MAIN} className="footer_logo_policy">
+                    Политика конфиденциальности
+                </NavLink>
             </div>
             {/*********************************************** Socials **************************************/}
             <div className="footer_social">
@@ -76,18 +81,19 @@ let footer = () => {
                 <div className="footer_phone_call">
                     <img src={phone} alt="phone" />
                     <NavLink
-                        to={`telto: ${process.env.REACT_APP_PHONE}`}
+                        to={`tel: +${process.env.REACT_APP_PHONE.replace(/\D+/gi,'')}`}
                         className="footer_phone_call_number"
                     >
                         {process.env.REACT_APP_PHONE}
                     </NavLink>
                 </div>
-                <button type="button">
+                <button type="button" onClick={() => setActive(true)}>
                     <span>ЗАКАЗАТЬ ЗВОНОК</span>
                 </button>
+                
             </div>
         </div>
     );
 };
 
-export default footer;
+export default Footer;

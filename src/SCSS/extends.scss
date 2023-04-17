@@ -2,10 +2,17 @@ flex {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
 }
 
 url {
     text-decoration: none;
     cursor: pointer;
+}
+
+h1 {
+    font: 700 48px "Bebas Neue";
+}
+
+h2 {
+    font: 700 32px 'Bebas Neue';
 }

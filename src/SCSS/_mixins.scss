@@ -1,6 +1,6 @@
-@mixin button($ptb, $plr, $skew_button, $skew_span) {
+@mixin button($ptb, $plr, $skew_button, $skew_span, $bgC) {
     padding: $ptb $plr;
-    background-color: $Secondary;
+    background-color: $bgC;
     border: none;
     transform: skewX($skew_button);
     cursor: pointer;

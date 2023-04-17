@@ -8,19 +8,19 @@ let secondDisplay = () => {
         const [isReadMore, setIsReadMore] = useState(true);
         const toggleReadMore = () => setIsReadMore(!isReadMore);
         return (
-            <p>
+            <p className="secondDisplay_p">
                 {isReadMore ? (
                     <p className="secondDisplay_desc">{text.slice(0, 426)}</p>
                 ) : (
                     <>
                         <p className="secondDisplay_desc">{text.slice(0, 426)}</p>
-                        <p className="secondDisplay_span">{text.slice(427, 852)}</p>
-                        <p className="secondDisplay_span">{text.slice(853, 2031)}</p>
-                        <p className="secondDisplay_span">{text.slice(2032, 2570)}</p>
-                        <p className="secondDisplay_span">{text.slice(2571)}</p>
+                        <p className="secondDisplay_span">{text.slice(426, 852)}</p>
+                        <p className="secondDisplay_span">{text.slice(852, 2031)}</p>
+                        <p className="secondDisplay_span">{text.slice(2031, 2570)}</p>
+                        <p className="secondDisplay_span">{text.slice(2570)}</p>
                     </>
                 )}
-                <span className="secondDisplay_desc_readMore" onClick={toggleReadMore}>
+                <span className="secondDisplay_readMore" onClick={toggleReadMore}>
                     {isReadMore ? " ЧИТАТЬ ДАЛЕЕ" : " СВЕРНУТЬ"}
                 </span>
             </p>

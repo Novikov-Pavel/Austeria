@@ -1,0 +1,22 @@
+@import "../../extends.scss";
+@import "../../mixins";
+@import "../../vars.scss";
+
+.sliderCatolog {
+    &__img {
+        @extend flex;
+        height: 500px;
+    }
+
+    &__left {
+        position: relative;
+        left: 30px;
+    }
+    &__right {
+        position: relative;
+        left: 30px;
+    }
+}
+/* .lastSl, .nextSl {
+    display: none;
+} */

@@ -51,7 +51,7 @@
         }
         button {
             @include font-face(700, 18px, "Poppins", $Gray_1);
-            @include button(12px, 50px, -15deg, 15deg);
+            @include button(12px, 50px, -15deg, 15deg, $Secondary);
         }
     }
 }

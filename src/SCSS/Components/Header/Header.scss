@@ -4,7 +4,8 @@
 
 .header {
     @extend flex;
-    margin: 0 calc(7vw);
+    margin: 0 calc(6vw);
+    align-items: center;
     &_menu {
         @extend flex;
         &_items {
@@ -31,6 +32,7 @@
     }
     &_contacts {
         @extend flex;
+        align-items: center;
         gap: 44px;
         &_mail,
         &_phone {

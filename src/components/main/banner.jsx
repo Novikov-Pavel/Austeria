@@ -1,13 +1,14 @@
 import React from "react";
-import "../../SCSS/Components/main/banner/banner.scss";
+import "../../SCSS/Components/main/banner.scss";
+import { NavLink } from "react-router-dom";
 
 let banner = () => {
     return (
         <div className="banner">
             <div className="banner_info">
-                <p className="banner_info_H0">Спортивные респираторы</p>
-                <span className="banner_info_disc">Эффективная защита органов дыхания при интенсивных тренировках</span>
-                <button className="banner_info_button"><span>Перейти в каталог</span></button>
+                <p className="banner_H0">Спортивные респираторы</p>
+                <span className="banner_disc">Эффективная защита органов дыхания при интенсивных тренировках</span>
+                <NavLink to={'/'} className="banner_button"><span>Перейти в каталог</span></NavLink>
             </div>
         </div>
     );

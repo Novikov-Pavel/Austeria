@@ -1,0 +1,66 @@
+@import "../../../SCSS/extends.scss";
+@import "../../../SCSS/mixins.scss";
+@import "../../../SCSS/vars.scss";
+@import "../../../SCSS/fonts";
+
+
+.catalog {
+    padding: 80px 100px;
+    text-align: center;
+    position: relative;
+    background: linear-gradient(180deg, #d9d9d9 0%, rgba(217, 217, 217, 0) 39.93%, rgba(217, 217, 217, 0.2) 63.04%);
+    &__form {
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        &__resp,
+        &__filter,
+        &__klapan {
+            @include font-face(700, 20px, "Bebas Neue", $Gray_1);
+            @include button(10px, 40px, 0, 0, transparent);
+            border: 1px solid $Gray_1;
+            &:hover {
+                color: $White;
+                background-color: $Gray_1;
+            }
+        }
+        &::before {
+            content: url("../../../assets/img/Components/shtrih_2.svg");
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            height: 0;
+            width: 0;
+            border-bottom: 334px solid #fdc003;
+            border-left: 494px solid transparent;
+            bottom: 0;
+            right: 0;
+        }
+    }
+    &__order {
+        @include button(12px, 85px, -15deg, 15deg, $Primary);
+        @include font-face(700, 18px, "Poppins", $White);
+    }
+}
+
+.swiper {
+    z-index: 0 !important;
+    &__title {
+        @include font-face(700, 32px, 'Bebas Neue', $Tetriary);
+    }
+    &__price {
+        @include font-face(700, 32px, 'Bebas Neue', $Primary);
+        margin: 20px
+    }
+    &__description {
+        @include font-face(500, 16px, 'Poppins', $Tetriary);
+    }
+}
+.content {
+    display: none !important;
+}

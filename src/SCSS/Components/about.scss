@@ -1,0 +1,58 @@
+@import "../vars.scss";
+@import "../fonts";
+@import "../mixins";
+@import "../extends.scss";
+
+.about {
+    background: url(../../assets/img/Components/About/policy-background.png) center center no-repeat;
+    background-size: cover;
+    padding: 150px 100px 100px;
+    /* height: 835px; */
+    &__h1,
+    &__p {
+        margin: 0;
+        color: $White;
+    }
+    &__title {
+        color: $Secondary;
+    }
+    &__p {
+        @include font-face(600, 18px, "Poppins", $White);
+        padding: 40px 0 80px;
+        width: 50%;
+    }
+    &::after {
+        content: url(../../assets/img/Components/About/shtrih_about.svg);
+        position: absolute;
+        bottom: -100px;
+        right: 0;
+    }
+}
+.contact {
+    background-color: $Primary;
+    color: $White;
+    padding: 85px 100px;
+    &__h1, &__h3, &__span, &__phone {
+        margin: 0;
+    }
+    &__budni, &__vihodnie, &__call {
+        display: flex;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+    &__h3 {
+        @include font-face(600, 18px, 'Poppins', $White);
+    }
+    &__span {
+        color: $Secondary;
+        margin-left: 50px;
+    }
+    &__phone {
+        @include font-face(700, 32px, 'Bebas Neue', $White);
+        text-decoration: none;
+    }
+    &__text {
+        @include font-face(600, 18px, 'Poppins', $White);
+        margin-left: 50px;
+    }
+}

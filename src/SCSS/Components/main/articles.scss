@@ -1,0 +1,41 @@
+@import '../../fonts';
+@import '../../mixins';
+@import '../../extends';
+@import '../../vars';
+
+.articles {
+    margin: 80px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__tabs {
+        @extend flex;
+        gap: 30px;
+    }
+    &__tab {
+        width: 30%;
+        text-decoration: none;
+        color: $Tetriary;
+        &__img, &__square {
+            height: 220px;
+            display: flex;
+            margin: auto;
+        }
+        &__square {
+            background-color: aquamarine;
+        }
+        &__title {
+            @extend h2;
+            text-transform: uppercase;
+        }
+        &__subTitle {
+            @include font-face(500, 16px, 'Poppins', $Tetriary)
+        }
+    }
+    &__btn {
+        @include button(12px, 35px, -15deg, 15deg, transparent);
+        @include font-face(700, 18px, 'Poppins', $Primary);
+        border: 2px solid #00960F;
+        text-decoration: none;
+    }
+}
