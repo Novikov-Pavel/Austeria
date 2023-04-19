@@ -42,7 +42,10 @@
         flex-direction: column;
         gap: 40px;
         &_call {
-            @extend flex;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
             gap: 20px;
             &_number {
                 @include font-face(600, 18px, "Poppins", $White);
@@ -52,6 +55,12 @@
         button {
             @include font-face(700, 18px, "Poppins", $Gray_1);
             @include button(12px, 50px, -15deg, 15deg, $Secondary);
+            border: 2px solid transparent;
+            &:hover {
+                background-color: transparent;
+                border: 2px solid $Secondary;
+                color: $Secondary;
+            }
         }
     }
 }

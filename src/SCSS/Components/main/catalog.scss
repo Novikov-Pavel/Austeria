@@ -20,6 +20,7 @@
             @include font-face(700, 20px, "Bebas Neue", $Gray_1);
             @include button(10px, 40px, 0, 0, transparent);
             border: 1px solid $Gray_1;
+            transition: all .5s;
             &:hover {
                 color: $White;
                 background-color: $Gray_1;
@@ -45,6 +46,13 @@
     &__order {
         @include button(12px, 85px, -15deg, 15deg, $Primary);
         @include font-face(700, 18px, "Poppins", $White);
+        border: 2px solid transparent;
+        transition: all .5s;
+        &:hover {
+            background-color: $White;
+            color: $Primary;
+            border: 2px solid $Primary;
+        }
     }
 }
 

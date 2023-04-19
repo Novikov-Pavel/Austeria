@@ -37,5 +37,17 @@
         @include font-face(700, 18px, 'Poppins', $Primary);
         border: 2px solid #00960F;
         text-decoration: none;
+        transition: all .5s;
+        &:hover {
+            background-color: $Primary;
+            color: $White;
+        }
+    }
+    &__pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        cursor: pointer;
     }
 }
