@@ -8,18 +8,20 @@ import Modal from "../components/modal";
 import CALLBACK from "../components/main/modalCallBack";
 import CATALOG from "../components/main/catalog";
 import ARCTITLES from "../components/main/arcticles";
+import FAQ from "../components/main/FAQ";
 
 
 function Main() {
     const [modalActive, setModalActive] = useState(false);
     return (
-        <div style={{ overflow: "hidden", maxWidth:1440, margin: 'auto' }}>
+        <div style={{maxWidth:1440, margin: 'auto' }}>
             <HEADER />
             <BANNER />
             <SECONDDISPLAY />
             <ADVANTAGES />
             <CATALOG />
             <ARCTITLES />
+            <FAQ />
             <FOOTER setActive={setModalActive}/>
             <Modal active={modalActive} setActive={setModalActive}>
                 <CALLBACK />

@@ -7,9 +7,8 @@
     background: url(../../assets/img/Components/About/policy-background.png) center center no-repeat;
     background-size: cover;
     padding: 150px 100px 100px;
-    /* height: 835px; */
-    &__h1,
-    &__p {
+    position: relative;
+    &__h1, &__p {
         margin: 0;
         color: $White;
     }

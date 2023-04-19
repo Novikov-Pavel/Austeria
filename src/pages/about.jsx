@@ -10,7 +10,7 @@ import CALLBACK from './../components/main/modalCallBack'
 function About() {
     const [modalActive, setModalActive] = useState(false);
     return (
-        <>
+        <div style={{maxWidth:1440, margin: 'auto' }}>
             <Header />
             <div className="about">
                 <h1 className="about__h1">
@@ -50,7 +50,7 @@ function About() {
             <Modal active={modalActive} setActive={setModalActive}>
                 <CALLBACK />
             </Modal>
-        </>
+        </div>
     );
 }
 

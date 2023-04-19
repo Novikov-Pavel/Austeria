@@ -1,0 +1,34 @@
+@import '../../fonts';
+@import '../../mixins';
+@import '../../extends.scss';
+@import '../../vars.scss';
+
+.accordion {
+    &::before {
+        content: url('../../../assets/img/Components/main/accordion_spot_yel.svg');
+        position: absolute;
+        top: -400px;
+        right: -100px;
+        z-index: -1;
+    }
+    &__item {
+        @include font-face(600, 18px, 'Poppins', $Tetriary);
+        text-transform: uppercase;
+    }
+    &__title {
+        @extend flex;
+        &-active {
+            color: $Primary;
+        }
+    }   
+    &__content {
+        padding-top: 20px;
+        @include font-face(500, 16px, 'Poppins', $Tetriary);
+        text-transform: capitalize;
+        max-width: 50%;
+    }
+    &__hr {
+        border: 1px solid #DEDEDE;
+        margin: 30px 0;
+    }
+}
