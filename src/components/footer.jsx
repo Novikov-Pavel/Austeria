@@ -1,4 +1,4 @@
-import React, { Children } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 import { MAIN } from "../consts";
 import logo from "../assets/img/Components/Footer/logo_footer.svg";

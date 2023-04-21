@@ -11,6 +11,17 @@ import arctitle1 from "./assets/img/Components/main/articles_1.png";
 import arctitle2 from "./assets/img/Components/main/articles_2.png";
 import arctitle3 from "./assets/img/Components/main/ustroysvo-respiratora.png";
 import arctitle4 from "./assets/img/Components/main/Catalog/mask-red.png";
+import social1 from './assets/img/Components/main/respirator1.png';
+import social2 from './assets/img/Components/main/respirator2.png';
+import social3 from './assets/img/Components/main/respirator3.png';
+import social4 from './assets/img/Components/main/respirator4.png';
+import social5 from './assets/img/Components/main/respirator5.png';
+import social6 from './assets/img/Components/main/respirator6.png';
+import social7 from './assets/img/Components/main/respirator7.png';
+import social8 from './assets/img/Components/main/respirator8.png';
+import social9 from './assets/img/Components/main/respirator9.png';
+import social10 from './assets/img/Components/main/respirator10.png';
+import social11 from './assets/img/Components/main/respirator11.png';
 
 export const resp = [
     {
@@ -171,3 +182,17 @@ export const accordion = [
             "Сама маска сделана из легкого материала – неопрена. Одежда из него стала применяться сравнительно недавно, в 50-х гг. прошлого века, в основном для экипировки водолазов. Неопрен очень легкий, эластичный и не пропускает влагу. Сама ткань достаточно износостойкая и сохраняет презентабельный вид своего владельца в любых ситуациях. Имеется в виду, что не мнется, к ней не прилипают загрязнения и, что немаловажно, бактерии – материал-то по сути синтетика. В общем, водолазы остались довольны!",
     },
 ];
+
+export const social = [
+    {id:1, img: social1},
+    {id:2, img: social2},
+    {id:3, img: social3},
+    {id:4, img: social4},
+    {id:5, img: social5},
+    {id:6, img: social6},
+    {id:7, img: social7},
+    {id:8, img: social8},
+    {id:9, img: social9},
+    {id:10, img: social10},
+    {id:11, img: social11},
+]

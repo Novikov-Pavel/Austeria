@@ -9,12 +9,13 @@ import CALLBACK from "../components/main/modalCallBack";
 import CATALOG from "../components/main/catalog";
 import ARCTITLES from "../components/main/arcticles";
 import FAQ from "../components/main/FAQ";
+import SOCIAL from "../components/main/social";
 
 
 function Main() {
     const [modalActive, setModalActive] = useState(false);
     return (
-        <div style={{maxWidth:1440, margin: 'auto' }}>
+        <div style={{maxWidth:1440, margin: '0 auto' }}>
             <HEADER />
             <BANNER />
             <SECONDDISPLAY />
@@ -22,6 +23,7 @@ function Main() {
             <CATALOG />
             <ARCTITLES />
             <FAQ />
+            <SOCIAL />
             <FOOTER setActive={setModalActive}/>
             <Modal active={modalActive} setActive={setModalActive}>
                 <CALLBACK />
