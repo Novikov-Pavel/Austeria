@@ -1,10 +1,10 @@
 import React,  { useState } from "react";
-import "../../SCSS/Components/main/catalog.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
 import * as DB from "../../DB";
 import "swiper/css";
 import "swiper/css/navigation";
+import "../../SCSS/Components/main/catalog.scss";
 
 let Catalog = () => {
     
@@ -36,15 +36,14 @@ let Catalog = () => {
                 modules={[Navigation]}
             >
                 
-                {DB.resp.map((e,i) => {
+                {DB.resp.map((e) => {
                     const {id, img, title, price, description} = e
-                    return <SwiperSlide className="swiper">
+                    return <SwiperSlide className="swiper" key={id}>
                         <img src={img} alt={id} />
                         <div className="swiper__title">{title}</div>
                         <div className="swiper__price">{price} руб</div>
                         <div className="swiper__description">{description}</div>                       
                     </SwiperSlide>
-                
                 })}
                 
                 

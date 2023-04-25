@@ -2,11 +2,11 @@ import React from "react";
 import logo from "../assets/img/Components/Header/logo.svg";
 import mail from "../assets/img/Components/Header/mail.svg";
 import phone from "../assets/img/Components/Header/phone.svg";
-import "../SCSS/Components/Header/Header.scss";
 import { ABOUT, MAIN, ARTICLEPAGE } from "../consts";
 import { Link, NavLink } from "react-router-dom";
+import "../SCSS/Components/Header/Header.scss";
 
-let header = () => {
+let Header = () => {
     return (
         <div className="header">
             {/*********************************************** Logo *******************************************/}{" "}
@@ -15,18 +15,18 @@ let header = () => {
             </NavLink>
             {/*********************************************** Menu *******************************************/}
             <div className="header_menu">
-                <NavLink to={ABOUT} className="header_menu_items">
+                <Link to={"/"} className={"header_menu_items"}>
                     <span>Каталог</span>
-                </NavLink>
-                <NavLink to={ARTICLEPAGE} className="header_menu_items">
+                </Link>
+                <Link to={ARTICLEPAGE} className={"header_menu_items"}>
                     <span>Статьи</span>
-                </NavLink>
-                <NavLink to={ABOUT} className="header_menu_items">
+                </Link>
+                <Link to={"/1"} className={"header_menu_items"}>
                     <span>FAQ</span>
-                </NavLink>
-                <NavLink to={ABOUT} className="header_menu_items">
+                </Link>
+                <Link to={ABOUT} className={"header_menu_items"}>
                     <span>О компании</span>
-                </NavLink>
+                </Link>
             </div>
             {/*********************************************** Contacts **************************************/}
             <div className="header_contacts">
@@ -43,7 +43,10 @@ let header = () => {
                     <img src={phone} alt="phone" />
                     <Link
                         className="header_contacts_phone_url"
-                        to={`tel: +${process.env.REACT_APP_PHONE.replace(/\D+/gi,'')}`}
+                        to={`tel: +${process.env.REACT_APP_PHONE.replace(
+                            /\D+/gi,
+                            ""
+                        )}`}
                     >
                         {process.env.REACT_APP_PHONE}
                     </Link>
@@ -53,4 +56,4 @@ let header = () => {
     );
 };
 
-export default header;
+export default Header;

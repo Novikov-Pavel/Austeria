@@ -9,17 +9,16 @@ import paginationRight from '../../assets/img/Components/main/pagination-right.s
 
 let a = {"Ё":"YO","Й":"I","Ц":"TS","У":"U","К":"K","Е":"E","Н":"N","Г":"G","Ш":"SH","Щ":"SCH","З":"Z","Х":"H","Ъ":"'","ё":"yo","й":"i","ц":"ts","у":"u","к":"k","е":"e","н":"n","г":"g","ш":"sh","щ":"sch","з":"z","х":"h","ъ":"'","Ф":"F","Ы":"I","В":"V","А":"A","П":"P","Р":"R","О":"O","Л":"L","Д":"D","Ж":"ZH","Э":"E","ф":"f","ы":"i","в":"v","а":"a","п":"p","р":"r","о":"o","л":"l","д":"d","ж":"zh","э":"e","Я":"Ya","Ч":"CH","С":"S","М":"M","И":"I","Т":"T","Ь":"'","Б":"B","Ю":"YU","я":"ya","ч":"ch","с":"s","м":"m","и":"i","т":"t","ь":"'","б":"b","ю":"yu"};
 
-let transliterate = word => {
+export let transliterate = word => {
     return word.toLowerCase().replace(/[\s\/]/gi, '-').split('').map(e => a[e] || e).join("").replace(/[\'\"]/gi,'')}
 
 let Articles = () => {
-    const [arts, setArts] = useState(DB.articles)
     const [currentPage, setCurrentPage] = useState(1)
     const [artsPerPage] = useState(6)
 
     const lastItem = currentPage * artsPerPage
     const firstItem = lastItem - artsPerPage
-    const currentItem = arts.slice(firstItem, lastItem)
+    const currentItem = DB.articles.slice(firstItem, lastItem)
     const paginate = pageNumber => setCurrentPage(pageNumber)
 
     return (
@@ -60,7 +59,7 @@ let Articles = () => {
                     paginate={paginate} 
                     currentPage={currentPage}
                     />
-                <img alt={''} src={paginationRight} onClick={() => paginate(Math.ceil(arts.length/artsPerPage))}/>
+                <img alt={''} src={paginationRight} onClick={() => paginate(Math.ceil(DB.articles.length/artsPerPage))}/>
             </div>
             <Link to={ARTICLEPAGE} className="articles__btn" ><span>СМОТРЕТЬ ВСЕ СТАТЬИ</span></Link>
         </div>
