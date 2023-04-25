@@ -10,7 +10,7 @@ import CALLBACK from './../components/main/modalCallBack'
 function About() {
     const [modalActive, setModalActive] = useState(false);
     return (
-        <div style={{maxWidth:1440, margin: 'auto' }}>
+        <div style={{maxWidth:1440, margin: 'auto', position:'relative' }}>
             <Header />
             <div className="about">
                 <h1 className="about__h1">

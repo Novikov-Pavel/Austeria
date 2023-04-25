@@ -1,7 +1,7 @@
 import React from "react";
-import "../../SCSS/Components/main/advantages.scss";
 import "../main/slider";
 import Slider from "../main/slider";
+import "../../SCSS/Components/main/advantages.scss";
 
 let advantages = () => {
     return (

@@ -10,12 +10,12 @@ import CATALOG from "../components/main/catalog";
 import ARCTITLES from "../components/main/arcticles";
 import FAQ from "../components/main/FAQ";
 import SOCIAL from "../components/main/social";
-
+import "../SCSS/Components/main/main.scss";
 
 function Main() {
     const [modalActive, setModalActive] = useState(false);
     return (
-        <div style={{maxWidth:1440, margin: '0 auto' }}>
+        <div className="main">
             <HEADER />
             <BANNER />
             <SECONDDISPLAY />
@@ -24,7 +24,7 @@ function Main() {
             <ARCTITLES />
             <FAQ />
             <SOCIAL />
-            <FOOTER setActive={setModalActive}/>
+            <FOOTER setActive={setModalActive} />
             <Modal active={modalActive} setActive={setModalActive}>
                 <CALLBACK />
             </Modal>

@@ -4,6 +4,8 @@
 @import "../../mixins";
 
 .banner {
+    max-width: 1440px;
+    margin: 0 auto;
     position: relative;
     background: url("../../../../src/assets/img/Components/main/background.png") no-repeat center center;
     &::before {

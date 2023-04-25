@@ -1,9 +1,10 @@
 import React from "react";
+import { HashLink as Link } from 'react-router-hash-link';
 import logo from "../assets/img/Components/Header/logo.svg";
 import mail from "../assets/img/Components/Header/mail.svg";
 import phone from "../assets/img/Components/Header/phone.svg";
 import { ABOUT, MAIN, ARTICLEPAGE } from "../consts";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "../SCSS/Components/Header/Header.scss";
 
 let Header = () => {
@@ -15,13 +16,13 @@ let Header = () => {
             </NavLink>
             {/*********************************************** Menu *******************************************/}
             <div className="header_menu">
-                <Link to={"/"} className={"header_menu_items"}>
+                <Link to="/#catalog" className={"header_menu_items"}>
                     <span>Каталог</span>
                 </Link>
                 <Link to={ARTICLEPAGE} className={"header_menu_items"}>
                     <span>Статьи</span>
                 </Link>
-                <Link to={"/1"} className={"header_menu_items"}>
+                <Link to='/#faq' className={"header_menu_items"}>
                     <span>FAQ</span>
                 </Link>
                 <Link to={ABOUT} className={"header_menu_items"}>
@@ -43,10 +44,7 @@ let Header = () => {
                     <img src={phone} alt="phone" />
                     <Link
                         className="header_contacts_phone_url"
-                        to={`tel: +${process.env.REACT_APP_PHONE.replace(
-                            /\D+/gi,
-                            ""
-                        )}`}
+                        to={`tel: +${process.env.REACT_APP_PHONE.replace(/\D+/gi,"")}`}
                     >
                         {process.env.REACT_APP_PHONE}
                     </Link>

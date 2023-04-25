@@ -11,7 +11,7 @@ const CatalogImg = [
     { id: 1, img: mask1 },
     { id: 2, img: mask2 },
     { id: 3, img: mask3 },
-    /* { id: 4, img: mask4 }, */
+    { id: 4, img: mask4 },
 ];
 
 let SliderCatalog = () => {
@@ -25,7 +25,7 @@ let SliderCatalog = () => {
         if (index > lastSlide1) {
             setIndex(0);
         }
-    }, [CatalogImg, index]);
+    }, [index]);
 
     return (
         <div className="sliderCatolog">

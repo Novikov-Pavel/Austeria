@@ -1,6 +1,6 @@
 import React from "react";
+import { HashLink as Link } from 'react-router-hash-link';
 import "../../SCSS/Components/main/banner.scss";
-import { NavLink } from "react-router-dom";
 
 let banner = () => {
     return (
@@ -8,7 +8,7 @@ let banner = () => {
             <div className="banner_info">
                 <p className="banner_H0">Спортивные респираторы</p>
                 <span className="banner_disc">Эффективная защита органов дыхания при интенсивных тренировках</span>
-                <NavLink to={'/'} className="banner_button"><span>Перейти в каталог</span></NavLink>
+                <Link to='#catalog' className="banner_button" ><span>Перейти в каталог</span></Link>
             </div>
         </div>
     );

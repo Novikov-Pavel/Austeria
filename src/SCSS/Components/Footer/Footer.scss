@@ -4,6 +4,9 @@
 @import '../../mixins';
 
 .footer {
+    max-width: 1440px;
+    margin: 0 auto;
+    box-sizing: border-box;
     @extend flex;
     background-color: $Gray_1;
     padding: 80px 103px;

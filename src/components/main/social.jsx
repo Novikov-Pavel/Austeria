@@ -63,7 +63,7 @@ let Social = () => {
                 </div>
                 <div className="social__photos__photos">
                     {currentItem.map(({ img, id }) => {
-                        return <SOCIALPHOTOS img={img} id={id} />;
+                        return <SOCIALPHOTOS img={img} id={id} key={id}/>;
                     })}
                 </div>
             </div>

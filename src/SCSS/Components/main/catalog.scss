@@ -3,8 +3,11 @@
 @import "../../../SCSS/vars.scss";
 @import "../../../SCSS/fonts";
 
-
 .catalog {
+    max-width: 1440px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    top: -100px;
     padding: 80px 100px;
     text-align: center;
     position: relative;

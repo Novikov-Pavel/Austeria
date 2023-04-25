@@ -2,10 +2,10 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { MAIN } from "../consts";
 import logo from "../assets/img/Components/Footer/logo_footer.svg";
-import "../SCSS/Components/Footer/Footer.scss";
 import mail from "../../src/assets/img/Components/Footer/mail_footer.svg";
 import phone from "../../src/assets/img/Components/Footer/phone_footer.svg";
 import { ReactSocialMediaIcons } from "react-social-media-icons";
+import "../SCSS/Components/Footer/Footer.scss";
 
 
 let Footer = ({active, setActive}) => {
@@ -22,9 +22,7 @@ let Footer = ({active, setActive}) => {
                     <br />
                     AllergyMask. Россия, Москва. 2016–{new Date().getFullYear()}
                 </p>
-                <NavLink to={MAIN} className="footer_logo_policy">
-                    Политика конфиденциальности
-                </NavLink>
+                <NavLink to={MAIN} className="footer_logo_policy">Политика конфиденциальности</NavLink>
             </div>
             {/*********************************************** Socials **************************************/}
             <div className="footer_social">

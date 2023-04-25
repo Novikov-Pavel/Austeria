@@ -4,8 +4,11 @@
 
 .header {
     @extend flex;
-    margin: 0 calc(6vw);
+    padding: 0 calc(6vw);
     align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    box-sizing: border-box;
     &_menu {
         @extend flex;
         &_items {
