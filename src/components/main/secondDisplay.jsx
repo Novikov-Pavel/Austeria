@@ -8,7 +8,7 @@ let secondDisplay = () => {
         const [isReadMore, setIsReadMore] = useState(true);
         const toggleReadMore = () => setIsReadMore(!isReadMore);
         return (
-            <p className="secondDisplay_p">
+            <div className="secondDisplay_p">
                 {isReadMore ? (
                     <p className="secondDisplay_desc">{text.slice(0, 426)}</p>
                 ) : (
@@ -23,7 +23,7 @@ let secondDisplay = () => {
                 <span className="secondDisplay_readMore" onClick={toggleReadMore}>
                     {isReadMore ? " ЧИТАТЬ ДАЛЕЕ" : " СВЕРНУТЬ"}
                 </span>
-            </p>
+            </div>
         );
     };
 

@@ -13,7 +13,7 @@ let modalCallBack = () => {
                             <input className="modalCallBack__form__text" type="text" placeholder="Имя" required />
                         </div>
                         <div className="modalCallBack__form__namePhone">
-                            <p className="modalCallBack__form__p"> Номер телефон*</p>
+                            <p className="modalCallBack__form__p">Номер телефона*</p>
                             <input className="modalCallBack__form__text" type="tel" placeholder="+7 (999) 000 00 00" required />
                         </div>
                     </div>
@@ -25,7 +25,7 @@ let modalCallBack = () => {
                 <div className="modalCallBack__formConf">
                     <div className="modalCallBack__formConf__conf">
                        <input className="modalCallBack__formConf__checkBox" type="checkbox" name="checkConf" id="checkConf" required />
-                       <label for="checkConf" className="modalCallBack__formConf__span">Соглашаюсь с офертой и политикой конфиденциальности</label>
+                       <label htmlFor="checkConf" className="modalCallBack__formConf__span">Соглашаюсь с офертой и политикой конфиденциальности</label>
                     </div>
                     <button className="modalCallBack__formConf__button" type="submit">ЗАКАЗАТЬ</button>
                 </div>                
