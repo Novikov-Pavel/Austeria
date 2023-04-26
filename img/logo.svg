@@ -1,0 +1,8 @@
+<svg 
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="158px" height="36px">
+<text kerning="auto" font-family="Myriad Pro" fill="rgb(0, 0, 0)" font-size="36px" x="0px" y="36.062px"><tspan font-size="36px" font-family="Montserrat" font-weight="bold" fill="#FFFFFF">Austera</tspan></text>
+<path fill-rule="evenodd"  stroke-width="2px" stroke="rgb(57, 185, 239)" fill-opacity="0" fill="rgb(57, 185, 239)"
+ d="M148.999,4.999 C151.209,4.999 153.0,6.790 153.0,8.999 C153.0,11.208 151.209,12.999 148.999,12.999 C146.790,12.999 144.999,11.208 144.999,8.999 C144.999,6.790 146.790,4.999 148.999,4.999 Z"/>
+</svg>
