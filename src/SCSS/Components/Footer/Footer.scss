@@ -48,7 +48,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-
             gap: 20px;
             &_number {
                 @include font-face(600, 18px, "Poppins", $White);

@@ -17,11 +17,7 @@ let Footer = ({active, setActive}) => {
                 <NavLink to={MAIN}>
                     <img src={logo} alt="logo" />
                 </NavLink>
-                <p>
-                    © Маски-респираторы от пыли пыльцы,
-                    <br />
-                    AllergyMask. Россия, Москва. 2016–{new Date().getFullYear()}
-                </p>
+                <p>© Маски-респираторы от пыли пыльцы, <br />AllergyMask. Россия, Москва. 2016–{new Date().getFullYear()}</p>
                 <NavLink to={MAIN} className="footer_logo_policy">Политика конфиденциальности</NavLink>
             </div>
             {/*********************************************** Socials **************************************/}
@@ -88,7 +84,6 @@ let Footer = ({active, setActive}) => {
                 <button type="button" onClick={() => setActive(true)}>
                     <span>ЗАКАЗАТЬ ЗВОНОК</span>
                 </button>
-                
             </div>
         </div>
     );

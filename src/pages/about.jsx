@@ -2,10 +2,10 @@ import React, {useState} from "react";
 import Header from "../components/header";
 import Footer from "../components/footer";
 import brands from "../assets/img/Components/About/brands.svg";
-import "../SCSS/Components/about.scss";
 import { Link } from "react-router-dom";
 import Modal from "../components/modal";
 import CALLBACK from './../components/main/modalCallBack'
+import "../SCSS/Components/about.scss";
 
 function About() {
     const [modalActive, setModalActive] = useState(false);
