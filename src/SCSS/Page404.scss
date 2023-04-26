@@ -1,7 +1,0 @@
-@import './fonts';
-@import './vars.scss';
-
-.Page404 {
-    @include font-face(700, 190px, 'Poppins', $Tetriary);
-    text-align: center;
-}
