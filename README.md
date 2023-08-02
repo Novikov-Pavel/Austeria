@@ -35,7 +35,7 @@
 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" height="40px" width="40px" alt="HTML" />
 </a>
-<a href="https://developer.mozilla.org/en-US/docs/Web/HTML">
+<a href="https://getbootstrap.com/">
   <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png" height="40px" width="40px" alt="Bootstrap" />
 </a>
 
